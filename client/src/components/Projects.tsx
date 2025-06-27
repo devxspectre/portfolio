@@ -82,7 +82,7 @@ const Projects = () => {
       title: "BlogX (In progress)",
       description:
         "A modern space for writers, thinkers, and storytellers to share their ideas, experiences, and expertise with a global audience. It offers a clean, distraction-free writing environment and powerful publishing tools.",
-      imgSrc: "./src/assets/blog-x.png",
+      imgSrc: "blog-x.png",
       githubUrl: "https://github.com/Sourav6971/medium-clone",
       liveUrl: "",
       techStack: [

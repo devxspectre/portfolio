@@ -5,7 +5,7 @@ const duplicatedImages = [...images, ...images];
 
 const TechStack = () => {
   return (
-    <div className="py-12 ">
+    <div className="py-12">
       {/* Heading */}
       <div className="flex justify-center mb-8 px-4">
         <h2
@@ -33,7 +33,7 @@ const TechStack = () => {
                 key={index}
                 src={imgSrc}
                 alt={`tech-${index}`}
-                className="h-8 sm:h-10 md:h-12 lg:h-14 w-auto object-contain grayscale hover:grayscale-0 transition"
+                className="h-8 sm:h-10 md:h-12 lg:h-14 w-auto object-contain filter-none"
               />
             ))}
           </motion.div>

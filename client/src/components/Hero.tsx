@@ -11,9 +11,9 @@ const Hero = () => {
   };
 
   const handleContact = () => {
-    window.scrollTo({
-      top: 2000,
+    document.getElementById("contact")?.scrollIntoView({
       behavior: "smooth",
+      block: "start",
     });
   };
 

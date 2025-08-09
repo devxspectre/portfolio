@@ -148,14 +148,14 @@ function ProjectContainer({
             {project.title}
             <span className="block h-1 w-20 md:w-24 "></span>
           </h2>
-          <p className="text-violet-200 leading-relaxed mb-5 text-base font-light">
+          <p className="text-slate-100 leading-relaxed mb-5 text-base font-light">
             {project.description}
           </p>
           <div className="flex flex-wrap gap-2 md:gap-3 mt-4">
             {project.techStack.map((tech, idx) => (
               <span
                 key={idx}
-                className="px-3 py-1 border-slate-100 border text-violet-200 rounded-full text-xs md:text-sm "
+                className="px-3 py-1 border-slate-100 border text-slate-200 rounded-full text-xs md:text-sm "
               >
                 {tech}
               </span>
@@ -172,13 +172,13 @@ function ProjectContainer({
             whileHover={{ scale: 1.02 }}
             transition={{ type: "spring", stiffness: 150 }}
           />
-          <div className="flex gap-6 text-violet-200 text-xl">
+          <div className="flex gap-6 text-slate-200 text-xl">
             {project.githubUrl && (
               <a
                 href={project.githubUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="hover:text-violet-400 transition"
+                className="hover:text-slate-400 transition"
               >
                 <FaGithub />
               </a>

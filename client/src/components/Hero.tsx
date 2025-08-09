@@ -52,7 +52,7 @@ const Hero = () => {
               onClick={handleContact}
               whileHover={{ scale: 1.07 }}
               whileTap={{ scale: 0.95 }}
-              className="px-6 py-3 sm:px-8 sm:py-3 rounded-md bg-gradient-to-r from-cyan-500 to-blue-500 text-white text-base sm:text-lg font-medium shadow hover:shadow-cyan-500/30 transition w-full sm:w-auto"
+              className="px-6 py-3 sm:px-8 sm:py-3 rounded-md border border-slate-400 cursor-pointer text-white text-base sm:text-lg font-medium shadow hover:shadow-cyan-500/30 transition w-full sm:w-auto"
             >
               Say Hello
             </motion.button>
@@ -60,7 +60,7 @@ const Hero = () => {
               onClick={handleResume}
               whileHover={{ scale: 1.07 }}
               whileTap={{ scale: 0.95 }}
-              className="px-6 py-3 sm:px-8 sm:py-3 rounded-md bg-slate-200 text-black text-base sm:text-lg font-medium flex items-center justify-center shadow hover:shadow-slate-300/30 transition w-full sm:w-auto"
+              className="px-6 py-3 sm:px-8 sm:py-3 rounded-md bg-slate-200 text-black text-base sm:text-lg font-medium flex items-center justify-center shadow hover:shadow-slate-300/30 transition w-full sm:w-auto cursor-pointer"
             >
               Resume
               <img

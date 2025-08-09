@@ -75,7 +75,7 @@ const Hero = () => {
         {/* Right: Image + Socials */}
         <div className="flex flex-col items-center gap-6">
           <motion.img
-            src="hero.jpg"
+            src="sourav.png"
             alt="Hero"
             className="rounded-full shadow-lg shadow-slate-950/40 border border-slate-600 w-40 h-40 sm:w-52 sm:h-52 md:w-64 md:h-64 lg:w-80 lg:h-80 object-cover hover:shadow-cyan-500/40 transition"
             whileHover={{ scale: 1.05, rotate: 1 }}

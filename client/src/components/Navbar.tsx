@@ -34,7 +34,7 @@ const Navbar = () => {
             animate={{ opacity: 0.95 }}
             exit={{ opacity: 0, y: -20 }}
             transition={{ duration: 0.4 }}
-            className="fixed top-0 left-0 w-full z-50 bg-gradient-to-r from-indigo-700 to-violet-500 shadow-lg backdrop-blur-md"
+            className="fixed top-0 left-0 w-full z-50 shadow-lg backdrop-blur-md"
           >
             <div className="flex items-center justify-between max-w-7xl mx-auto px-4 sm:px-6 md:px-8 py-4 md:py-5 text-white">
               <div

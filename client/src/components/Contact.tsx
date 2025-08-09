@@ -21,12 +21,12 @@ const Contact = () => {
 
   return (
     <div
-      className="flex justify-center items-center min-h-screen bg-gray-950 px-4"
+      className="flex justify-center items-center min-h-screen px-4 bg-slate-950"
       id="contact"
     >
-      <div className="bg-white/5 backdrop-blur-2xl rounded-3xl p-6 sm:p-8 md:p-12 w-full max-w-lg md:max-w-xl border border-blue-600/30 shadow-2xl">
+      <div className=" backdrop-blur-2xl rounded-3xl p-6 sm:p-8 md:p-12 w-full max-w-lg md:max-w-xl border border-slate-600">
         <h2
-          className=" text-3xl font-extrabold  text-blue-100 mb-8 text-center tracking-wide"
+          className=" text-3xl font-extrabold  text-gray-100 mb-8 text-center tracking-wide"
           style={{ fontFamily: "Space Grotesk, sans-serif" }}
         >
           Let's Connect
@@ -39,7 +39,7 @@ const Contact = () => {
             required
             value={name}
             onChange={(e) => setName(e.target.value)}
-            className="bg-blue-800/30 placeholder-blue-300 text-blue-100 rounded-xl p-3 sm:p-4 focus:outline-none focus:ring-2 focus:ring-blue-500 transition w-full"
+            className="bg-blue-100/30 placeholder-white text-blue-100 rounded-xl p-3 sm:p-4 focus:outline-none focus:ring-2 w-full"
           />
           <input
             type="email"
@@ -47,7 +47,7 @@ const Contact = () => {
             required
             value={email}
             onChange={(e) => setEmail(e.target.value)}
-            className="bg-blue-800/30 placeholder-blue-300 text-blue-100 rounded-xl p-3 sm:p-4 focus:outline-none focus:ring-2 focus:ring-blue-500 transition w-full"
+            className="bg-blue-100/30 placeholder-white text-blue-100 rounded-xl p-3 sm:p-4 focus:outline-none focus:ring-2 focus:ring-blue-500 transition w-full"
           />
           <textarea
             placeholder="Your Feedback"
@@ -55,13 +55,13 @@ const Contact = () => {
             value={feedback}
             onChange={(e) => setFeedback(e.target.value)}
             rows={4}
-            className="bg-blue-800/30 placeholder-blue-300 text-blue-100 rounded-xl p-3 sm:p-4 pb-6 focus:outline-none focus:ring-2 focus:ring-blue-500 transition resize-none w-full"
+            className="bg-blue-100/30 placeholder-white text-blue-100 rounded-xl p-3 sm:p-4 pb-6 focus:outline-none focus:ring-2 focus:ring-blue-500 transition resize-none w-full"
           ></textarea>
           <motion.button
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.97 }}
             type="submit"
-            className="bg-gradient-to-r from-indigo-600 via-blue-600 to-indigo-700 text-white rounded-xl py-3 mt-1 font-semibold shadow-md hover:shadow-blue-500/40 transition text-base sm:text-lg"
+            className="border-slate-200 border text-white rounded-xl py-3 mt-1 font-semibold shadow-md hover:shadow-blue-500/40 transition text-base sm:text-lg cursor-pointer"
           >
             Submit Feedback
           </motion.button>

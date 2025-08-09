@@ -97,10 +97,7 @@ const Projects = () => {
   ];
 
   return (
-    <div
-      className="py-20 bg-gradient-to-b from-indigo-950 via-violet-950 to-slate-900 min-h-screen"
-      id="projects"
-    >
+    <div className="py-20  min-h-screen" id="projects">
       <motion.div
         initial="hidden"
         animate="visible"
@@ -137,9 +134,8 @@ function ProjectContainer({
       transition={{ duration: 0.8, ease: "easeOut" }}
       whileHover={{
         y: -6,
-        boxShadow: "0px 12px 40px rgba(139, 92, 246, 0.25)",
       }}
-      className="max-w-6xl w-[90%] md:w-[85%] lg:w-[80%] p-6 md:p-10 rounded-2xl bg-white/5 backdrop-blur-2xl shadow-2xl border border-violet-700/40 hover:border-violet-400 transition"
+      className="max-w-6xl w-[90%] md:w-[85%] lg:w-[80%] p-6 md:p-10 rounded-2xl bg-white/5 backdrop-blur-2xl "
     >
       <div
         className={`flex flex-col md:grid md:grid-cols-2 gap-8 md:gap-12 items-center ${
@@ -148,22 +144,21 @@ function ProjectContainer({
       >
         {/* Text */}
         <div className="w-full">
-          <h2 className="text-2xl font-extrabold text-violet-100 mb-3 relative w-fit">
+          <h2 className="text-2xl font-extrabold text-slate-100 mb-3 relative w-fit">
             {project.title}
-            <span className="block h-1 w-20 md:w-24 bg-gradient-to-r from-violet-500 via-indigo-400 to-blue-400 mt-2 rounded-full"></span>
+            <span className="block h-1 w-20 md:w-24 "></span>
           </h2>
           <p className="text-violet-200 leading-relaxed mb-5 text-base font-light">
             {project.description}
           </p>
           <div className="flex flex-wrap gap-2 md:gap-3 mt-4">
             {project.techStack.map((tech, idx) => (
-              <motion.span
+              <span
                 key={idx}
-                whileHover={{ scale: 1.1 }}
-                className="px-3 py-1 bg-violet-800/30 text-violet-200 rounded-full text-xs md:text-sm border border-violet-500/20 transition"
+                className="px-3 py-1 border-slate-100 border text-violet-200 rounded-full text-xs md:text-sm "
               >
                 {tech}
-              </motion.span>
+              </span>
             ))}
           </div>
         </div>
@@ -173,7 +168,7 @@ function ProjectContainer({
           <motion.img
             src={project.imgSrc}
             alt={project.title}
-            className="rounded-2xl shadow-lg border border-violet-700/40 w-full max-w-xs sm:max-w-sm md:max-w-md hover:shadow-violet-500/40 transition object-cover"
+            className="rounded-2xl w-full max-w-xs sm:max-w-sm md:max-w-md  object-cover"
             whileHover={{ scale: 1.02 }}
             transition={{ type: "spring", stiffness: 150 }}
           />

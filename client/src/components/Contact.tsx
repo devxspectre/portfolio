@@ -76,7 +76,7 @@ const Contact = () => {
 						icon={<FaDiscord />}
 						url="https://discord.com/users/Sourav_007_"
 					/>
-					<SocialIcon icon={<FaTwitter />} url="https://x.com/_Sourav014" />
+					<SocialIcon icon={<FaTwitter />} url="https://x.com/_spectretwt" />
 				</div>
 
 				{/* Animated Feedback Alert */}

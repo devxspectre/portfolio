@@ -94,7 +94,7 @@ const Hero = () => {
 						/>
 						<SocialIcon
 							icon={<FaTwitter />}
-							url="https://x.com/_Sourav014"
+							url="https://x.com/_spectretwt"
 							color="#1DA1F2"
 						/>
 					</div>

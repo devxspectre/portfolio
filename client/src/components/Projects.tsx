@@ -19,7 +19,7 @@ const Projects = () => {
 			description:
 				"A community-driven platform where readers can share their thoughts, rate books, and explore reviews from fellow readers. Users can post detailed reviews, give star ratings, and browse a wide range of genres. Your next favorite book is just a review away!",
 			imgSrc: "book-review.png",
-			githubUrl: "https://github.com/Sourav6971/Book-review",
+			githubUrl: "https://github.com/spectrecrafts/Book-review",
 			liveUrl: "https://book-review-sourav.vercel.app/",
 			techStack: [
 				"React.js",
@@ -35,7 +35,7 @@ const Projects = () => {
 			description:
 				"Crypto payment gateway for your business — seamless payment mapping and instant notifications. Currently supporting Solana, with future support planned for all major blockchains.",
 			imgSrc: "payzee.png",
-			githubUrl: "https://github.com/Sourav6971/Payzee",
+			githubUrl: "https://github.com/spectrecrafts/Payzee",
 			liveUrl: "https://payzee-frontend.vercel.app/",
 			techStack: [
 				"React.js",
@@ -50,7 +50,7 @@ const Projects = () => {
 			description:
 				"SolanaX is a powerful token creation and minting platform built on the Solana blockchain, designed to simplify the process of launching your own digital assets. Whether you're building a project, launching a community coin, or exploring Web3, SolanaX offers secure, scalable tools to bring your ideas to life.",
 			imgSrc: "solana.png",
-			githubUrl: "https://github.com/Sourav6971/solanaX",
+			githubUrl: "https://github.com/spectrecrafts/solanaX",
 			liveUrl: "https://solana-x-kappa.vercel.app/",
 			techStack: [
 				"Solana/web3.js",
@@ -66,7 +66,7 @@ const Projects = () => {
 			description:
 				"A secure and user-friendly solution for managing and safeguarding private keys, ensuring complete control over your digital assets. With built-in two-factor authentication (2FA), users benefit from an added layer of security, protecting against unauthorized access.",
 			imgSrc: "in-secure.png",
-			githubUrl: "https://github.com/Sourav6971/InSecure",
+			githubUrl: "https://github.com/spectrecrafts/InSecure",
 			liveUrl: "https://in-secure.vercel.app/",
 			techStack: [
 				"React.js",
@@ -83,7 +83,7 @@ const Projects = () => {
 			description:
 				"A modern space for writers, thinkers, and storytellers to share their ideas, experiences, and expertise with a global audience. It offers a clean, distraction-free writing environment and powerful publishing tools.",
 			imgSrc: "blog-x.png",
-			githubUrl: "https://github.com/Sourav6971/medium-clone",
+			githubUrl: "https://github.com/spectrecrafts/medium-clone",
 			liveUrl: "",
 			techStack: [
 				"React.js",

@@ -15,6 +15,21 @@ interface Project {
 const Projects = () => {
 	const projects: Project[] = [
 		{
+			title: "Payzee",
+			description:
+				"Payzee is a comprehensive payment gateway solution that enables businesses to accept cryptocurrency payments seamlessly. It provides real-time payment processing, secure transaction handling, and instant notifications. Currently supporting Solana blockchain with plans to expand to other major blockchains in the future.",
+			imgSrc: "payzee.png",
+			githubUrl: "https://github.com/spectrecrafts/Payzee",
+			liveUrl: "https://payzee-frontend.vercel.app/",
+			techStack: [
+				"React.js",
+				"Solana/web3.js",
+				"Node.js",
+				"Postgres",
+				"Express",
+			],
+		},
+		{
 			title: "Book-Review",
 			description:
 				"A community-driven platform where readers can share their thoughts, rate books, and explore reviews from fellow readers. Users can post detailed reviews, give star ratings, and browse a wide range of genres. Your next favorite book is just a review away!",
@@ -30,37 +45,7 @@ const Projects = () => {
 				"Express",
 			],
 		},
-		{
-			title: "Payzee",
-			description:
-				"Crypto payment gateway for your business — seamless payment mapping and instant notifications. Currently supporting Solana, with future support planned for all major blockchains.",
-			imgSrc: "payzee.png",
-			githubUrl: "https://github.com/spectrecrafts/Payzee",
-			liveUrl: "https://payzee-frontend.vercel.app/",
-			techStack: [
-				"React.js",
-				"Solana/web3.js",
-				"Node.js",
-				"MongoDB",
-				"Express",
-			],
-		},
-		{
-			title: "SolanaX",
-			description:
-				"SolanaX is a powerful token creation and minting platform built on the Solana blockchain, designed to simplify the process of launching your own digital assets. Whether you're building a project, launching a community coin, or exploring Web3, SolanaX offers secure, scalable tools to bring your ideas to life.",
-			imgSrc: "solana.png",
-			githubUrl: "https://github.com/spectrecrafts/solanaX",
-			liveUrl: "https://solana-x-kappa.vercel.app/",
-			techStack: [
-				"Solana/web3.js",
-				"TypeScript",
-				"React",
-				"Node",
-				"Prisma",
-				"Postgres",
-			],
-		},
+
 		{
 			title: "InSecure (In progress)",
 			description:

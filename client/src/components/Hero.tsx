@@ -5,7 +5,7 @@ import { FaGithub, FaDiscord, FaTwitter } from "react-icons/fa";
 const Hero = () => {
 	const handleResume = () => {
 		window.open(
-			"https://drive.google.com/file/d/1I3cBWwzbDXJQvS-Z_nCVwptb_sILvFLH/view?usp=drivesdk"
+			"https://drive.google.com/file/d/1I3cBWwzbDXJQvS-Z_nCVwptb_sILvFLH/view?usp=drivesdk",
 			"_blank"
 		);
 	};

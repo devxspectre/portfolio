@@ -70,7 +70,7 @@ const Contact = () => {
 				<div className="flex justify-center gap-8 sm:gap-10 mt-8 sm:mt-10 text-2xl sm:text-3xl text-slate-300">
 					<SocialIcon
 						icon={<FaGithub />}
-						url="https://github.com/spectrecrafts"
+						url="https://github.com/devxspectre"
 					/>
 					<SocialIcon
 						icon={<FaDiscord />}

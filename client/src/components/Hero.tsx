@@ -84,7 +84,7 @@ const Hero = () => {
 					<div className="flex gap-6 sm:gap-8 text-2xl sm:text-3xl text-slate-300">
 						<SocialIcon
 							icon={<FaGithub />}
-							url="https://github.com/devspectre"
+							url="https://github.com/devxspectre"
 							color="#f5f5f5"
 						/>
 						<SocialIcon

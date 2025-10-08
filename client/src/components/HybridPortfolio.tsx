@@ -4,7 +4,7 @@ import { FaGithub, FaTwitter, FaDiscord, FaEnvelope, FaDownload, FaCode, FaProje
 
 interface Command {
   command: string;
-  output: JSX.Element | string;
+  output: React.ReactNode | string;
 }
 
 interface Project {

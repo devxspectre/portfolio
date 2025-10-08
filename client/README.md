@@ -1,69 +1,54 @@
-# React + TypeScript + Vite
+# Sourav Kumar - CLI Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, terminal-inspired portfolio website built with React, TypeScript, and Tailwind CSS. This portfolio showcases my projects, skills, and experience in an interactive command-line interface.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Terminal Interface**: Full command-line experience with interactive commands
+- **Project Showcase**: Detailed project information with technologies and achievements
+- **Skills Display**: Organized technical skills in a clean, categorized view
+- **Responsive Design**: Works on all device sizes
+- **Interactive Elements**: Command history, auto-completion, and dynamic responses
 
-## Expanding the ESLint configuration
+## Commands
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- `help` - Show all available commands
+- `about` - Learn more about me
+- `projects` - List all projects
+- `project <name>` - Show detailed information about a specific project
+- `skills` - Display my technical skills
+- `experience` - Show work experience
+- `contact` - Get contact information
+- `socials` - Show social media links
+- `whoami` - Display basic user information
+- `clear` - Clear the terminal
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## Technologies Used
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+- React 19
+- TypeScript
+- Tailwind CSS
+- Framer Motion (for animations)
+- Vite (bundler)
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## Getting Started
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+1. Clone the repository
+2. Install dependencies: `npm install`
+3. Start development server: `npm run dev`
+4. Open your browser to `http://localhost:5173`
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## Design Philosophy
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+This portfolio is designed to showcase technical skills in a practical way. The CLI interface demonstrates command-line proficiency while providing an interactive experience for visitors to learn more about my work and expertise.
+
+## Author
+
+Sourav Kumar
+- GitHub: [spectrecrafts](https://github.com/spectrecrafts)
+- Twitter: [@_spectretwt](https://x.com/_spectretwt)
+- Email: souravkumarcse2023@gmail.com
+
+## License
+
+This project is open source and available under the MIT License.

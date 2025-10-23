@@ -16,8 +16,17 @@ import {
   SiDocker,
   SiGit,
   SiGithub,
-  SiVercel,
-  SiAmazon
+  SiAmazon,
+  SiApachekafka,
+  SiSystem76,
+  SiTerraform,
+  SiKubernetes,
+  SiRedis,
+  SiRabbitmq,
+  SiMysql,
+  SiLinux,
+  SiJenkins,
+  SiJira
 } from "react-icons/si";
 
 const Skills = () => {
@@ -31,14 +40,23 @@ const Skills = () => {
     { name: "Tailwind CSS", icon: SiTailwindcss },
     { name: "MongoDB", icon: SiMongodb },
     { name: "PostgreSQL", icon: SiPostgresql },
+    { name: "MySQL", icon: SiMysql },
     { name: "Ethereum", icon: SiEthereum },
     { name: "Solana", icon: SiSolana },
     { name: "Web3.js", icon: SiWeb3Dotjs },
     { name: "Blockchain", icon: SiBlockchaindotcom },
     { name: "Docker", icon: SiDocker },
+    { name: "Kubernetes", icon: SiKubernetes },
+    { name: "Redis", icon: SiRedis },
+    { name: "Apache Kafka", icon: SiApachekafka },
+    { name: "RabbitMQ", icon: SiRabbitmq },
+    { name: "Terraform", icon: SiTerraform },
+    { name: "System Design", icon: SiSystem76 },
+    { name: "Linux", icon: SiLinux },
+    { name: "Jenkins", icon: SiJenkins },
     { name: "Git", icon: SiGit },
     { name: "GitHub", icon: SiGithub },
-    { name: "Vercel", icon: SiVercel },
+    { name: "Jira", icon: SiJira },
     { name: "AWS", icon: SiAmazon },
   ];
 

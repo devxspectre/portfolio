@@ -4,26 +4,15 @@ import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
 const Hero = () => {
   return (
     <section className="min-h-screen flex items-center pt-16">
-      <div className="container mx-auto px-4 py-20 digital-font">
-        <div className="flex flex-col lg:flex-row items-center">
+      <div className="container mx-auto px-4 py-10 digital-font">
+        <div className="flex flex-col-reverse gap-10 items-center">
           <div className="lg:w-1/2 mb-16 lg:mb-0">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6 }}
             >
-              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-3 sm:mb-4 digital-font">
-                <span className="gradient-text mono-font">Sourav</span>
-              </h1>
-              <h2 className="text-xl sm:text-2xl md:text-2xl lg:text-3xl text-gray-300 mb-4 sm:mb-6 mono-font">
-                Senior Developer & Blockchain Engineer
-              </h2>
-              <p className="text-base sm:text-lg text-gray-300 mb-6 sm:mb-8 max-w-lg mono-font">
-                Crafting exceptional digital experiences through clean code and innovative solutions. 
-                Specialized in building scalable decentralized applications and fullstack solutions.
-              </p>
-              
-              <div className="flex flex-wrap gap-3 sm:gap-4 mb-8">
+              <div className="flex flex-wrap justify-center gap-3 sm:gap-4 mb-8">
                 <motion.a
                   href="#projects"
                   className="btn-primary inline-block mono-font"
@@ -42,7 +31,7 @@ const Hero = () => {
                 </motion.a>
               </div>
 
-              <div className="flex space-x-4 sm:space-x-6">
+              <div className="flex justify-center space-x-4 sm:space-x-6">
                 <motion.a
                   href="https://github.com/devxspectre"
                   target="_blank"
@@ -87,7 +76,7 @@ const Hero = () => {
                 />
                 <div className="absolute inset-0 rounded-full border-2 border-gray-500 opacity-30"></div>
               </div>
-              
+
               {/* Decorative elements */}
               <motion.div
                 className="absolute -top-4 -right-4 w-16 h-16 sm:w-20 sm:h-20 border-2 border-gray-600 rounded-full opacity-30"

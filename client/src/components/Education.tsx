@@ -3,16 +3,15 @@ import { motion } from "framer-motion";
 const Education = () => {
   const education = [
     {
-      degree: "Bachelor of Technology in Computer Science",
-      institution: "XYZ University",
-      period: "2016 - 2020",
-      details: "Relevant coursework: Data Structures, Algorithms, Software Engineering, Distributed Systems"
-    }
+      degree: "Bachelors in Engineering",
+      institution: "M S Ramaiah institute of Technology",
+      period: "2022-2026",
+    },
   ];
 
   return (
-    <motion.section 
-      id="education" 
+    <motion.section
+      id="education"
       className="mb-16 digital-font"
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
@@ -33,8 +32,12 @@ const Education = () => {
             >
               <div className="flex flex-col md:flex-row md:justify-between md:items-start mb-4">
                 <div>
-                  <h3 className="text-2xl font-bold text-white mb-1 digital-font">{edu.degree}</h3>
-                  <span className="text-xl font-semibold text-gray-200 mono-font">{edu.institution}</span>
+                  <h3 className="text-2xl font-bold text-white mb-1 digital-font">
+                    {edu.degree}
+                  </h3>
+                  <span className="text-xl font-semibold text-gray-200 mono-font">
+                    {edu.institution}
+                  </span>
                 </div>
                 <div className="mt-2 md:mt-0">
                   <span className="text-gray-300 text-lg font-medium mono-font">
@@ -42,7 +45,6 @@ const Education = () => {
                   </span>
                 </div>
               </div>
-              {edu.details && <p className="text-gray-200 text-lg pl-4 border-l-2 border-gray-600 mono-font">{edu.details}</p>}
             </motion.div>
           ))}
         </div>

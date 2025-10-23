@@ -1,3 +1,5 @@
+import { motion } from "framer-motion";
+
 const Education = () => {
   const education = [
     {
@@ -9,25 +11,43 @@ const Education = () => {
   ];
 
   return (
-    <section id="education" className="mb-12">
-      <div className="bg-white rounded-lg shadow-md p-8">
-        <h2 className="text-2xl font-bold text-gray-800 mb-6 border-b pb-2">Education</h2>
-        <div className="space-y-4">
+    <motion.section 
+      id="education" 
+      className="mb-16 digital-font"
+      initial={{ opacity: 0, y: 20 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.5, delay: 0.2 }}
+    >
+      <div>
+        <h2 className="section-header text-3xl font-bold text-white mb-8 digital-font">
+          Education
+        </h2>
+        <div className="space-y-6">
           {education.map((edu, index) => (
-            <div key={index}>
-              <div className="flex flex-col md:flex-row md:justify-between md:items-start">
-                <h3 className="text-xl font-semibold text-gray-800">{edu.degree}</h3>
-                <div className="flex flex-col items-start md:items-end mt-1 md:mt-0">
-                  <span className="text-lg font-medium text-blue-600">{edu.institution}</span>
-                  <span className="text-gray-600 text-sm mt-1">{edu.period}</span>
+            <motion.div
+              key={index}
+              className="pb-6 border-b border-gray-700 last:border-0 last:pb-0"
+              initial={{ opacity: 0, y: 10 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.2 + index * 0.1 }}
+            >
+              <div className="flex flex-col md:flex-row md:justify-between md:items-start mb-4">
+                <div>
+                  <h3 className="text-2xl font-bold text-white mb-1 digital-font">{edu.degree}</h3>
+                  <span className="text-xl font-semibold text-gray-200 mono-font">{edu.institution}</span>
+                </div>
+                <div className="mt-2 md:mt-0">
+                  <span className="text-gray-300 text-lg font-medium mono-font">
+                    {edu.period}
+                  </span>
                 </div>
               </div>
-              {edu.details && <p className="mt-2 text-gray-700">{edu.details}</p>}
-            </div>
+              {edu.details && <p className="text-gray-200 text-lg pl-4 border-l-2 border-gray-600 mono-font">{edu.details}</p>}
+            </motion.div>
           ))}
         </div>
       </div>
-    </section>
+    </motion.section>
   );
 };
 

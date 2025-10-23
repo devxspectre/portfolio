@@ -1,75 +1,92 @@
 import { FaEnvelope, FaPhone, FaLinkedin, FaGithub, FaMapMarkerAlt } from 'react-icons/fa';
+import { motion } from "framer-motion";
 
 const ContactInfo = () => {
   return (
-    <section id="contact" className="mb-12">
-      <div className="bg-gray-800 p-8">
-        <h2 className="text-2xl font-bold text-white mb-6 border-b pb-2">Contact Me</h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          <div>
-            <h3 className="text-xl font-semibold text-white mb-4">Get in Touch</h3>
-            <p className="text-gray-300 mb-6">
+    <motion.section 
+      id="contact" 
+      className="mb-12 digital-font"
+      initial={{ opacity: 0, y: 20 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.5, delay: 0.4 }}
+    >
+      <div>
+        <h2 className="section-header text-3xl font-bold text-white mb-8 digital-font">
+          Contact Me
+        </h2>
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
+          <motion.div
+            initial={{ opacity: 0, x: -20 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ delay: 0.5 }}
+          >
+            <h3 className="text-2xl font-semibold text-white mb-4 digital-font">Get in Touch</h3>
+            <p className="text-gray-200 mb-8 text-lg mono-font">
               Feel free to reach out if you're looking for a developer, have a question, or just want to connect.
             </p>
             
-            <div className="space-y-3">
-              <div className="flex items-center">
-                <FaMapMarkerAlt className="mr-3 text-gray-500" />
-                <span>Bangalore, India</span>
+            <div className="space-y-4">
+              <div className="flex items-center p-3 rounded-lg bg-gray-800/20 hover:bg-gray-800/40 transition-colors duration-300">
+                <FaMapMarkerAlt className="mr-4 text-gray-300 text-xl" />
+                <span className="text-gray-200 mono-font">Bangalore, India</span>
               </div>
-              <div className="flex items-center">
-                <FaEnvelope className="mr-3 text-gray-500" />
-                <span>sourav@example.com</span>
+              <div className="flex items-center p-3 rounded-lg bg-gray-800/20 hover:bg-gray-800/40 transition-colors duration-300">
+                <FaEnvelope className="mr-4 text-gray-300 text-xl" />
+                <span className="text-gray-200 mono-font">sourav@example.com</span>
               </div>
-              <div className="flex items-center">
-                <FaPhone className="mr-3 text-gray-500" />
-                <span>+91 98765 43210</span>
+              <div className="flex items-center p-3 rounded-lg bg-gray-800/20 hover:bg-gray-800/40 transition-colors duration-300">
+                <FaPhone className="mr-4 text-gray-300 text-xl" />
+                <span className="text-gray-200 mono-font">+91 98765 43210</span>
               </div>
             </div>
-          </div>
+          </motion.div>
           
-          <div>
-            <h3 className="text-xl font-semibold text-white mb-4">Connect with Me</h3>
-            <p className="text-gray-300 mb-6">
+          <motion.div
+            initial={{ opacity: 0, x: 20 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ delay: 0.6 }}
+          >
+            <h3 className="text-2xl font-semibold text-white mb-4 digital-font">Connect with Me</h3>
+            <p className="text-gray-200 mb-8 text-lg mono-font">
               Check out my profiles on these platforms.
             </p>
             
-            <div className="space-y-3">
-              <div className="flex items-center">
-                <FaLinkedin className="mr-3 text-gray-500" />
-                <a 
-                  href="https://linkedin.com/in/sourav" 
-                  target="_blank" 
-                  rel="noopener noreferrer" 
-                  className="text-blue-400 hover:underline"
-                >
-                  linkedin.com/in/sourav
-                </a>
-              </div>
-              <div className="flex items-center">
-                <FaGithub className="mr-3 text-gray-500" />
-                <a 
-                  href="https://github.com/devxspectre" 
-                  target="_blank" 
-                  rel="noopener noreferrer" 
-                  className="text-blue-400 hover:underline"
-                >
-                  github.com/devxspectre
-                </a>
-              </div>
+            <div className="space-y-4">
+              <a 
+                href="https://linkedin.com/in/sourav" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="flex items-center p-3 rounded-lg bg-gray-800/20 hover:bg-gray-800/40 transition-colors duration-300 block"
+              >
+                <FaLinkedin className="mr-4 text-gray-300 text-xl" />
+                <span className="text-gray-200 mono-font">linkedin.com/in/sourav</span>
+              </a>
+              <a 
+                href="https://github.com/devxspectre" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="flex items-center p-3 rounded-lg bg-gray-800/20 hover:bg-gray-800/40 transition-colors duration-300 block"
+              >
+                <FaGithub className="mr-4 text-gray-300 text-xl" />
+                <span className="text-gray-200 mono-font">github.com/devxspectre</span>
+              </a>
             </div>
             
-            <div className="mt-8">
-              <h4 className="font-medium text-white mb-2">Preferred Contact Method</h4>
-              <div className="flex space-x-2">
-                <span className="px-3 py-1 bg-blue-900 text-blue-200 rounded-full text-sm">Email</span>
-                <span className="px-3 py-1 bg-green-900 text-green-200 rounded-full text-sm">LinkedIn</span>
+            <div className="mt-10">
+              <h4 className="text-xl font-semibold text-white mb-4 digital-font">Preferred Contact Method</h4>
+              <div className="flex flex-wrap gap-3">
+                <span className="px-4 py-2 bg-gray-800/30 text-gray-200 rounded-full text-sm font-medium border border-gray-600 mono-font">
+                  Email
+                </span>
+                <span className="px-4 py-2 bg-gray-800/30 text-gray-200 rounded-full text-sm font-medium border border-gray-600 mono-font">
+                  LinkedIn
+                </span>
               </div>
             </div>
-          </div>
+          </motion.div>
         </div>
       </div>
-    </section>
+    </motion.section>
   );
 };
 

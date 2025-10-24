@@ -1,4 +1,4 @@
-import { useEffect } from 'react';
+import { useEffect } from "react";
 import Navigation from "./components/Navigation";
 import Hero from "./components/Hero";
 import About from "./components/About";
@@ -11,17 +11,20 @@ import Education from "./components/Education";
 const App = () => {
   useEffect(() => {
     const handleScroll = () => {
-      const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
-      const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+      const winScroll =
+        document.body.scrollTop || document.documentElement.scrollTop;
+      const height =
+        document.documentElement.scrollHeight -
+        document.documentElement.clientHeight;
       const scrolled = (winScroll / height) * 100;
-      const progress = document.getElementById('progress-bar');
+      const progress = document.getElementById("progress-bar");
       if (progress) {
         progress.style.width = `${scrolled}%`;
       }
     };
 
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   return (
@@ -30,16 +33,17 @@ const App = () => {
       <Navigation />
       <main>
         <Hero />
-        <div className="container mx-auto px-4 py-8"> {/* Reduced padding from 16 to 8 */}
+        <div className="container mx-auto px-4 py-8">
+          {/* Reduced padding from 16 to 8 */}
           <About />
           <div className="section-divider"></div>
           <Experience />
           <div className="section-divider"></div>
+          <Projects />
+          <div className="section-divider"></div>
           <Education />
           <div className="section-divider"></div>
           <Skills />
-          <div className="section-divider"></div>
-          <Projects />
           <div className="section-divider"></div>
           <ContactInfo />
         </div>

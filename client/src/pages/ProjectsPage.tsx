@@ -2,6 +2,45 @@ import { Link } from "react-router-dom"
 
 const projects = [
   {
+    name: "ProjLaunch",
+    description:
+      "Built an interactive team onboarding agent that walks customers through a conversational setup flow, asking about their team structure, sprint cadence, issue labels, and workflow preferences before automatically creating a fully configured GitHub project. Designed with a simple state-machine loop instead of relying on external orchestration frameworks, implementing tool calling from scratch to interact with GitHub's API for repository creation, branch protection rules, issue templates, and project boards. Enables businesses to standardize project setups across teams, eliminating manual configuration and reducing onboarding time",
+    technologies: [
+      "Python",
+      "GitHub API",
+      "CLI",
+      "Tool Calling",
+    ],
+  },
+  {
+    name: "BotDaddy",
+    description:
+      "Built an intelligent chatbot agent capable of executing actions beyond simple Q&A, integrating with external platforms to autonomously raise Jira tickets, initiate refund workflows, and perform operational tasks based on user intent. Implemented a multi-agent orchestration architecture where a primary agent routes requests to specialized sub-agents for task execution, each equipped with its own set of tools and capabilities. Designed the system to handle ambiguous requests through clarification loops and fallback strategies, achieving reliable task completion across diverse operational scenarios without human intervention",
+    technologies: [
+      "MongoDB",
+      "Express",
+      "React",
+      "Node.js",
+      "Turborepo",
+      "TypeScript",
+      "Cohere",
+      "Jira API",
+    ],
+  },
+  {
+    name: "VoiceKit",
+    description:
+      "Developed a pure NLP library from scratch for sentiment analysis, intent classification, and information extraction, implementing every layer manually without external machine learning frameworks. Built text processing pipelines for tokenization, stemming, and stop-word removal alongside custom vectorization techniques for feature extraction. Designed and trained neural network layers including embeddings, dense layers, and activation functions with gradient-based optimization from the ground up. Achieved competitive accuracy on benchmark classification tasks while maintaining full control over the architecture and training process, demonstrating deep understanding of the underlying mathematics",
+    technologies: [
+      "Python",
+      "NumPy",
+      "NLP",
+      "Sentiment Analysis",
+      "Intent Classification",
+      "Information Extraction",
+    ],
+  },
+  {
     name: "Payzee",
     description:
       "Built enterprise-grade backend for cryptocurrency transactions on Solana, achieving 99.9% success rate for 10,000+ daily transactions using Node.js and Express. Developed RESTful APIs with MongoDB and Redis for caching, implementing asynchronous processing with worker threads to handle peak loads without downtime. Architected distributed systems with Docker and AWS, incorporating load balancing and auto-scaling to maintain 100ms average latency under high traffic. Integrated secure authentication and validation mechanisms, reducing fraud incidents by 60% through on-chain verification and real-time monitoring",
@@ -49,22 +88,7 @@ const projects = [
       "Smart Contracts",
       "Token Standards",
     ],
-  },
-  {
-    name: "Developer Profile NFT Builder",
-    description:
-      "Built an NFT builder platform for creating developer profile NFTs with on-chain verification using Solana, Anchor, and Cargo. Developed Rust-based smart contracts that enable developers to mint unique NFT profiles showcasing their skills, projects, and achievements. Implemented the Anchor framework for secure and efficient smart contract development with comprehensive testing using Mocha and Rust unit tests. Built an intuitive React frontend that connects to Phantom wallet and allows developers to create, customize, and manage their profile NFTs. Integrated GitHub API and CI/CD pipelines for automatic verification of developer contributions and achievements. Designed a verification system that validates developer credentials on-chain, making it easier for recruiters to identify and evaluate talent through immutable, verifiable credentials",
-    technologies: [
-      "Solana",
-      "Anchor",
-      "Rust",
-      "Cargo",
-      "React",
-      "Phantom Wallet",
-      "GitHub API",
-      "On-chain Verification",
-    ],
-  },
+  }
 ]
 
 const ProjectsPage = () => {

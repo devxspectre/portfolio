@@ -18,7 +18,7 @@ const Home = () => {
           </span>
         </h1>
         <p className="text-xl text-black/70 mt-10 leading-relaxed font-serif font-thin italic max-w-xl">
-          No CS degree, just consequences, curiosity, and a compulsion to write everything I come across and find worth sharing. Learning and building is spectre's way. I write about everything I find worth talking about, sharing my views because honestly, I don't have friends. If my blogs made you think, laugh, or Google something, that would be enough.
+          No CS degree, just consequences, curiosity, and a compulsion to write everything I come across and find worth sharing. Learning and building is spectre's way. I write about everything I find worth talking about, sharing my views because honestly, I don't have friends. If my blogs made you think or Google something, that would be enough.
         </p>
 
         <div className="flex items-center gap-1.5 mt-10 text-base text-black/50 font-sans">

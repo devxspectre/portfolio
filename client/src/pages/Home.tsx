@@ -37,13 +37,13 @@ const Home = () => {
             github.com/devxspectre
           </a>
           <a
-            href="https://linkedin.com/in/sourav"
+            href="https://linkedin.com/in/souravv014"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-2 text-sm text-black/60 hover:text-black transition-colors font-sans"
           >
             <FaLinkedin className="w-4 h-4" />
-            linkedin.com/in/sourav
+            linkedin.com/in/souravv014
           </a>
           <a
             href="mailto:mailsourav014@gmail.com"
